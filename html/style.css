@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Montserrat:wght@500&display=swap');
+
+body {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+
+.circle {
+  position: absolute;
+  border: .3vw solid rgba(255, 255, 255, 0.705);
+  width: 13vw;
+  height: 13vw;
+  border-radius: 10vw;
+  bottom: 2.5vw;
+  left: 3.5vw;
+  transform: rotate(360deg); /* Equal to rotateZ(45deg) */
+}
+
+
+.ene {
+  width: 1.5vw;
+  height: 1.5vw;
+  background-color: black;
+  margin-left: 3vw;
+  margin-top: -1vw;
+  border-radius: 2vw;
+  z-index: 9999;
+}
+
+.ene h1 {
+  position: relative;
+  text-align: center;
+  color: white;
+  top: .2vw;
+  font-size: .9vw;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+
+.status i {
+  font-size: 1.5vw;
+  text-shadow: -.1vw 0 rgb(255, 255, 255), 0 .1vw  rgb(255, 255, 255), .1vw  0 rgb(255, 255, 255), 0 -.1vw  rgb(255, 255, 255);
+  margin-left: 1vw;
+}
+
+.status h1 {
+  background-color: #878586;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  font-size: .7vw;
+  color: white;
+  width: 3.1vw;
+  height: 1.2vw;
+  text-align: center;
+  border-left: .3vw solid #1A2746;
+  border-radius: .2vw;
+}
+
+.status {
+  position: absolute;
+  bottom: 2vw;
+}
+
+#bur {
+  margin-left: .9vw;
+}
+
+#water {
+  margin-left: 1.1vw;
+}
+
+#cerebro {
+  margin-left: .8vw;
+}
+
+.balas {
+  background-color: rgb(40,37,43);
+  width: 6vw;
+  height: 2vw;
+  position: absolute;
+  bottom: 2vw;
+  right: 2vw;
+  border-radius: .4vw;
+}
+
+.balas img {
+  position: absolute;
+  width: 1vw;
+  height: 1vw;
+  left: .4vw;
+  top: .5vw;
+  transform: rotate(30deg);
+}
+
+.balas h1 {
+  text-align: center;
+  color: white;
+  margin-top: .4vw;
+  font-size: .8vw;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  margin-left: 1vw;
+}
+
+#carhud {
+  display: none;
+}
+
+.ldBar {
+  color: transparent;
+  transform: rotate(180deg);
+}
+
+.ldBar path.mainline {
+  stroke: #071228;
+}
+
+.ldBar path.baseline {
+  stroke-width: 2;
+  stroke: rgba(255, 255, 255, 0.452);
+}
+
+.kmh h1{
+  font-size: 1.4vw;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0vw .15vw 0vw rgb(0, 0, 0);
+  position: absolute;
+  bottom: -1vw;
+}
+
+.kmh {
+  position: absolute;
+  bottom: 12vw;
+  left: 17vw;
+  width: 6.5vw;
+  padding-left: .5vw;
+  border-bottom: .1vw solid rgba(255, 255, 255, 0.678);
+}
+
+.fuel i {
+  font-size: 1vw;
+  text-shadow: -.1vw 0 rgb(255, 255, 255), 0 .1vw  rgb(255, 255, 255), .1vw  0 rgb(255, 255, 255), 0 -.1vw  rgb(255, 255, 255);
+  position: absolute;
+  top: -1.3vw;
+  left: .5vw;
+}
+
+.fuel {
+  position: absolute;
+  bottom: 10vw;
+  left: 18vw;
+  width: 6vw;
+  border-bottom: .1vw solid rgba(255, 255, 255, 0.678);
+}
+
+.fuel h1 {
+  font-size: 1.2vw;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0vw .15vw 0vw rgb(0, 0, 0);
+  position: absolute;
+  top: -2.2vw;
+  left: 2vw;
+}
+
+
+.motor i {
+  font-size: 1vw;
+  text-shadow: -.1vw 0 rgb(255, 255, 255), 0 .1vw  rgb(255, 255, 255), .1vw  0 rgb(255, 255, 255), 0 -.1vw  rgb(255, 255, 255);
+  position: absolute;
+  top: -1.3vw;
+  left: .5vw;
+}
+
+.motor {
+  position: absolute;
+  bottom: 8vw;
+  left: 17.3vw;
+  width: 6.8vw;
+  border-bottom: .1vw solid rgba(255, 255, 255, 0.678);
+}
+
+.motor h1 {
+  font-size: 1.2vw;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow: 0vw .15vw 0vw rgb(0, 0, 0);
+  position: absolute;
+  top: -2.2vw;
+  left: 2vw;
+}
+
+.playerdata {
+  position: absolute;
+  right: 1vw;
+}
+
+.playerdata img {
+  width: 8vw;
+  height: 8vw;
+}
+
+.contentpdata {
+  background-color: rgba(0, 0, 0, 0.521);
+  max-width: 10vw;
+  height: 1.3vw;
+  border-radius: 1vw;
+}
+
+.contentpdata h1 {
+  font-size: .8vw;
+  color: white;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  text-shadow: 0vw .15vw 0vw rgb(0, 0, 0);
+  text-align: center; 
+}
+
+.pdata {
+  position: absolute;
+  right: 10vw;
+  top: 8vw;
+}
+
+.pdatab {
+  max-width: 20vw;
+}
+
+.pdatab h1 {
+  font-size: .9vw;
+  color: white;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  text-shadow: 0vw .15vw 0vw rgb(0, 0, 0);
+  text-align: right; 
+}
+
+ .notify { /* Here you can change the position. */
+  position: absolute; 
+  top: 90%;
+  left: 50%;
+  transform:translate(-50%,-50%);
+}
+
+.notification h1{
+  font-size: .9vw;
+  color: white;
+  font-family: 'Mochiy Pop P One', sans-serif;
+  text-shadow: 0vw .15vw 0vw rgb(0, 0, 0);
+  position: absolute;
+  top: -1.5vw;
+}
+
+.notification p {
+  font-size: .6vw;
+  color: rgb(255, 255, 255);
+  font-family: 'Mochiy Pop P One', sans-serif;
+  text-shadow: 0vw .15vw 0vw rgb(0, 0, 0);
+  padding: .5vw;
+  text-align: left;
+}
+
+.notification {
+  position: relative;
+  max-width: 15vw;
+  max-height: 10vw;
+  background-color: #878586a1;
+  border-left: .4vw solid #09ff00;
+  border-radius: .5vw;
+  margin-top: 1vw;
+}
